@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 316 300.6" style="enable-background:new 0 0 316 300.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#585B60;stroke-width:14;stroke-miterlimit:10;}
+	.st1{fill:#585B60;stroke:#585B60;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:none;stroke:#585B60;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#585B60;stroke-width:7;stroke-miterlimit:10;}
+</style>
+<title>Impressora</title>
+<line class="st0" x1="20.6" y1="176" x2="295.4" y2="176"/>
+<ellipse class="st0" cx="57.2" cy="136.3" rx="3.2" ry="3.3"/>
+<path class="st0" d="M295.3,151.4v64.3c0,16.2-12.6,29.3-28.2,29.4h-69.5l-5.5-20.2l-1.8-6.8h-64.5l-1.9,6.7l-5.5,20.3H48.8
+	c-15.6,0-28.2-13.1-28.2-29.2v-79.5c0-16.2,12.6-29.3,28.2-29.3c0,0,0,0,0,0h15.5c3,0,5.4,2.5,5.4,5.5c0,0,0,0,0,0v32.9
+	c0,5.5,4.3,9.9,9.6,9.9H222c25.4,0,24.3-3.6,24.3-25.1V107h6.2C286.7,107.8,295.4,105.9,295.3,151.4z"/>
+<path class="st0" d="M246.3,107v23.3c0,13.9-10.9,25.1-24.3,25.1c0,0,0,0,0,0H93.9c-13.4,0-24.2-11.2-24.2-25.1V107H246.3z"/>
+<polygon class="st1" points="231.9,202.9 231.9,245 197.6,245 192.1,224.8 190.3,218 125.8,218 123.9,224.7 118.4,245 84,245 
+	84,202.9 "/>
+<polygon class="st2" points="208.7,285.9 107.3,285.9 118.4,245 123.9,224.7 125.8,218 190.3,218 192.1,224.8 197.6,245 "/>
+<polygon class="st0" points="199.3,37.6 199.3,106.8 116.7,106.8 116.7,14.7 175,14.7 "/>
+<polygon class="st3" points="171.8,42 171.8,19.4 195.8,42 "/>
+</svg>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  	<title>SoftStock - Movimentação de Estoque</title>
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+  </head>
+
+  <body>
+
+  	<header>
+  		<div class="header-container">
+  			<div class="header-logo">
+          <a href="index.html">
+  				  <img src="assets/img/Logo.svg">
+          </a>
+  			</div>
+  			<span class="header-links">
+  				<a href="cadastro_produto.html">Cadastro do Produto</a>
+  				<a href="#">Opções</a>
+  				<a href="#">Controle de Validade</a>
+  				<a href="#" class="selecionado">Movimentação de Estoque</a>
+  			</span>
+  		</div>
+  	</header>
+
+  	<div class="principal">
+  		<table class="estoque-table" id="tabela">
+
+          <tr>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Transação</th>
+            <th>Produto</th>
+            <th>Valor Total</th>
+            <th>Quantidade</th>
+            <th>Estoque</th>
+          </tr>
+
+          <tr>
+            <td>15/10/2020</td>
+            <td>16:34</td>
+            <td>Venda</td>
+            <td>Leite</td>
+            <td>R$ 2,80</td>
+            <td>-1</td>
+            <td>43</td>
+          </tr>
+
+          <tr>
+            <td>14/10/2020</td>
+            <td>14:11</td>
+            <td>Venda</td>
+            <td>Tomate</td>
+            <td>R$ 5,50</td>
+            <td>-2</td>
+            <td>72</td>
+          </tr>
+
+          <tr>
+            <td>14/10/2020</td>
+            <td>13:52</td>
+            <td>Venda</td>
+            <td>Cerveja</td>
+            <td>R$ 9,90</td>
+            <td>-3</td>
+            <td>80</td>
+          </tr>
+
+          <tr>
+            <td>14/10/2020</td>
+            <td>12:11</td>
+            <td>Venda</td>
+            <td>Alface</td>
+            <td>R$ 2,50</td>
+            <td>-1</td>
+            <td>53</td>
+          </tr>
+
+          <tr>
+            <td>13/10/2020</td>
+            <td>16:33</td>
+            <td>Ajuste de Estoque</td>
+            <td>Banana</td>
+            <td></td>
+            <td>92</td>
+            <td>120</td>
+          </tr>
+
+          <tr>
+            <td>13/10/2020</td>
+            <td>14:59</td>
+            <td>Venda</td>
+            <td>Queijo</td>
+            <td>R$ 27,30</td>
+            <td>-1</td>
+            <td>41</td>
+          </tr>
+
+          <tr>
+            <td>13/10/2020</td>
+            <td>11:34</td>
+            <td>Venda</td>
+            <td>Vinho</td>
+            <td>R$ 84,90</td>
+            <td>-7</td>
+            <td>78</td>
+          </tr>
+          
+          <tr>
+            <td>13/10/2020</td>
+            <td>11:22</td>
+            <td>Venda</td>
+            <td>Sorvete</td>
+            <td>R$ 134,90</td>
+            <td>-12</td>
+            <td>132</td>
+          </tr>
+
+          <tr>
+            <td>12/10/2020</td>
+            <td>13:54</td>
+            <td>Venda</td>
+            <td>Mousse</td>
+            <td>R$ 19,90</td>
+            <td>-3</td>
+            <td>62</td>
+          </tr>
+
+          <tr>
+            <td>11/10/2020</td>
+            <td>12:31</td>
+            <td>Venda</td>
+            <td>Bala</td>
+            <td>R$ 0,50</td>
+            <td>-5</td>
+            <td>75</td>
+          </tr>
+
+      </table>
+
+  	</div>
+
+  	<footer>
+
+      <h2>Detalhes sobre:</h2>
+
+      <h4>Data</h4>
+      <p id="t_data"></p>
+
+      <h4>Hora</h4>
+      <p id="t_hora"></p>
+
+      <h4>Transação</h4>
+      <p id="t_transacao"></p>
+
+      <h4>Produto</h4>
+      <p id="t_produto"></p><br>  
+
+      <h4>Valor Total</h4>
+      <p id="t_valorTotal"></p>
+
+      <h4>Quantidade</h4>
+      <p id="t_quantidade"></p>
+
+      <h4>Estoque</h4>
+      <p id="t_estoque"></p>
+
+      
+
+  	</footer>
+
+    <form class="imprimir">
+        <input type="button" onclick="window.print()" value="IMPRIMIR TABELA">
+    </form>
+
+  	<script src="assets/js/script-tabela.js"></script>
+  </body>
+
+</html>

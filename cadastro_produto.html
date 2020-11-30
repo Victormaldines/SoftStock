@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  	<title>SoftStock - Cadastro de Produto</title>
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+  </head>
+
+  <body class="cadastro">
+
+  	<header>
+  		<div class="header-container">
+  			<div class="header-logo">
+          <a href="index.html">
+  				  <img src="assets/img/Logo.svg">
+          </a>
+  			</div>
+  			<span class="header-links">
+  				<a href="#" class="selecionado">Cadastro do Produto</a>
+  				<a href="#">Opções</a>
+  				<a href="#">Controle de Validade</a>
+  				<a href="movimentacao_estoque.html">Movimentação de Estoque</a>
+  			</span>
+  		</div>
+  	</header>
+
+  	<div class="principal cadastro-principal">
+
+      <p class="titulo">Procurar por...</p>
+
+      <div class="menu">
+        <span class="menu-lupa"><img src="assets/img/Lupa.svg"></span>
+        <span class="menu-impressora"><img src="assets/img/Impressora.svg"></span>
+      </div>
+
+      <span class="add" onclick="addProduto()">ADICIONAR <b>PRODUTO</b></span>
+
+      <div class="qr">
+        
+        <div><img src="assets/img/QrCode.svg"></div>
+        <div class="qr-foto">
+          
+          <div class="qr-titulo" id="tituloProduto">1</div>
+          <div class="qr-espaco">
+            <button>+</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cadastro">
+
+        <form>
+
+          <div class="cadastro-descricao">
+            <label for="descricao">Descrição</label><br>
+            <input type="text" placeholder="novo produto" id="descricao"><br>
+          </div>
+
+          <div class="cadastro-categoria">
+            <label for="selectCategoria">Categoria</label><br>
+            <select id="selectCategoria">
+              <option value="">selecione</option>
+            </select>
+            <input type="button" value="+" onclick="adicionarOpc(document.getElementById('selectCategoria'), 0)">
+          </div>
+
+          <div class="cadastro-marca">
+            <label for="selectMarca">Marca</label><br>
+            <select id="selectMarca">
+              <option value="">selecione</option>
+            </select>
+            <input type="button" value="+" onclick="adicionarOpc(document.getElementById('selectMarca'), 1)">
+          </div>
+
+          <div class="cadastro-estoqueMin">
+            <label for="estoqueMin">Estoque mínimo</label><br>
+            <input type="text" id="estoqueMin"><br>
+          </div>
+
+          <div class="cadastro-estoqueMax">
+            <label for="estoqueMax">Estoque máximo</label><br>
+            <input type="text" id="estoqueMax"><br>
+          </div>
+
+          <div class="cadastro-observacao">
+            <label for="observacao">Observação</label><br>
+            <input type="text" placeholder="observação..." id="observacao"><br>
+          </div>
+
+        </form>
+        
+        
+      </div>
+
+      <div class="historico">
+        
+        <h3>HISTÓRICO DE COMPRAS</h3>
+
+        <table class="cadastro-table">
+
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Quantidade</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+  		
+  	</div>
+
+  	<footer>
+
+  	</footer>
+
+  	<script src="assets/js/script.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,497 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(28, 40, 51, 1);
+}
+
+.selecionado {
+	font-weight: bold;
+}
+
+body {
+	font-family: "SEGOE UI", sans-serif;
+}
+
+header {
+	
+}
+
+.header-container {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.header-logo {
+	width: 100px;
+}
+
+.header-links {
+	font-size: 1.3rem;
+	margin-top: 20px;
+}
+
+.header-links a:nth-child(n+2) {
+	margin-left: 25px;
+}
+
+.principal {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+/*MOVIMENTACAO_ESTOQUE*/
+
+
+.principal {
+	display: flex;
+	justify-content: center;
+}
+
+.estoque-table{
+	border-collapse: collapse;
+	border: solid 1px rgba(0, 0, 0, .13);
+	border-radius: 10px 10px 0 0;
+
+	padding: 5px;
+
+	cursor: default;
+}
+
+.estoque-table th {
+	background: rgba(28, 40, 51, 0.1);
+	padding: 15px 40px;
+}
+
+.estoque-table td {
+	text-align: center;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.estoque-table tr {
+	border-bottom: 1px solid rgba(0, 0, 0, .13);
+}
+
+.estoque-table tr:hover td{
+	color: white;
+	background: rgba(52, 152, 219, 1);
+}
+
+.estoque-table tr:nth-child(2n+3){
+	background: rgba(28, 40, 51, 0.04);
+}
+
+/*CADASTRO PRODUTO*/
+
+
+.cadastro-principal {
+	display: grid;
+	grid:
+	"titulo titulo menu addProduto" 60px
+	"qr cadastro historico historico" 1fr
+	/ 3fr 1fr 3fr 3fr;
+
+}
+
+.titulo,
+.menu {
+	background: rgba(213, 216, 220, .5)
+}
+
+.qr,
+.cadastro,
+.historico {
+	background: rgba(213, 216, 220, .2);
+}
+
+.titulo {
+	grid-area: titulo;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	font-style: italic;
+	font-size: 1.2rem;
+	border-radius: 15px 0 0 0;
+}
+
+.menu {
+	grid-area: menu;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.menu-lupa img{
+	width: 20px;
+	margin: 20px 10px;
+}
+
+.menu-impressora img {
+	width: 30px;
+	margin: 15px 10px;
+}
+
+.add {
+	grid-area: addProduto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+	background: rgba(52, 152, 219, 1);
+	border-radius: 0 15px 0 0;
+	cursor: pointer;
+}
+
+.add:active,
+.qr-espaco button:active,
+.cadastro form input[type="button"]:active {
+	background: rgba(46, 134, 193, 1);
+}
+
+.qr-espaco button:active,
+.cadastro form input[type="button"]:active {
+	transform: scale(0.95);
+}
+
+
+/*QR*/
+
+.qr {
+	grid-area: qr;
+
+}
+
+.qr img {
+	width: 100%;
+	margin: 14px 0;
+	padding: 10px;
+}
+
+.qr-foto {
+	margin: 10px;
+	border: 2px solid rgba(28, 40, 51, 0.2);
+	border-radius: 10px;
+}
+
+.qr-titulo {
+	text-align: right;
+	padding: 5px 10px;
+	background: rgba(28, 40, 51, 0.2);
+	border-radius: 8px 8px 0 0 ;
+}
+
+.qr-espaco {
+	position: relative;
+	height: 150px;
+	border-radius: 10px;
+	background: white;
+}
+
+.qr-espaco button{
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	background: rgba(52, 152, 219, 1);
+	padding: 5px 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 0.9rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all .1s ease-in-out;
+}
+
+
+/*Cadastro*/
+
+.cadastro {
+	grid-area: cadastro;
+}
+
+form {
+	display: grid;
+	padding-top: 80px;
+	grid:
+	"descricao descricao" 80px
+	"categoria marca" 80px
+	"estoqueMin estoqueMax" 80px
+	"observacao observacao" 80px
+	/ 256px 256px;
+}
+
+form label {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: rgba(28, 40, 51, 0.8);
+}
+
+.cadastro form input, form select {
+	margin-top: 5px;
+	font-size: 0.8rem;
+	border: none;
+	padding: 10px 15px;
+	background: rgba(213, 216, 220, 1);
+	color: rgba(28, 40, 51, 0.9);
+}
+
+form input[type="text"]{
+	border-radius: 10px;
+	transition: all .1s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form select:focus {
+	transform: scale(1.02);
+}
+
+form select {
+	width: 80%;
+	border-radius: 10px 0 0 10px;
+	transition: all .1s ease-in-out;
+}
+
+.cadastro form input[type="button"] {
+	background: rgba(52, 152, 219, 1);
+	color: white;
+	font-weight: bold;
+	font-size: 0.9rem;
+	border-radius: 0 10px 10px 0;
+	cursor: pointer;
+	margin-left:-5px;
+	transition: all .2s ease-in-out;
+}
+
+.cadastro-descricao {
+	grid-area: descricao;
+}
+
+.cadastro-descricao input {
+	width: 99%;
+}
+
+.cadastro-categoria {
+	grid-area: categoria;
+}
+
+.cadastro-marca {
+	grid-area: marca;
+}
+
+.cadastro-estoqueMin {
+	grid-area: estoqueMin;
+}
+
+.cadastro-estoqueMin input {
+	width: 97%;
+}
+
+.cadastro-estoqueMax {
+	grid-area: estoqueMax;
+}
+
+.cadastro-estoqueMax input {
+	width: 97%;
+}
+
+.cadastro-observacao {
+	grid-area: observacao;
+}
+
+.cadastro-observacao input {
+	width: 99%;
+}
+
+/*Histórico*/
+
+.historico {
+	grid-area: historico;
+	padding: 10px;
+}
+
+.historico h3 {
+	margin-top: 80px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: rgba(28, 40, 51, 0.8);
+}
+
+.cadastro-table {
+	border-collapse: collapse;
+}
+
+.cadastro-table thead tr{
+	text-transform: uppercase;
+	font-style: italic;
+	color: rgba(28, 40, 51, 0.6);
+}
+
+.cadastro-table thead th {
+	padding: 5px 40px 5px 0px;
+	border-bottom: 2px solid rgba(28, 40, 51, 0.2);
+	font-weight: normal;
+	font-size: 0.8rem;
+	text-align: left;
+}
+
+.cadastro-table tbody td {
+	text-align: center;
+}
+
+footer {
+	width: 1024px;
+	margin: 0 auto;
+	text-align: center;
+	
+	padding: 20px;
+}
+
+footer h2 {
+	border-bottom: 1px solid rgba(28, 40, 51, 0.2);
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+footer h4, p{
+	display: inline-block;
+}
+
+footer h4 {
+	font-size: 1.2rem;
+	padding: 5px 10px;
+}
+
+footer p {
+	font-style: italic;
+}
+
+.imprimir {
+	border-top: 1px solid rgba(28, 40, 51, 0.2);
+	width: 1024px;
+	padding: 20px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.imprimir input[type="button"] {
+	text-align: center;
+	padding: 20px 60px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	background: rgba(52, 152, 219, 1);
+	cursor: pointer;
+}
+
+@media print {
+	header {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+
+	.imprimir {
+		display: none;
+	}
+}
+
+/*CENTRAL*/
+
+.central header{
+	text-align: center;
+	color: rgba(28, 40, 51, 0.8);
+	margin-bottom: 20px;
+}
+
+.central a {
+	display: block;
+}
+
+.central h2 {
+	font-style: italic;
+	text-transform: uppercase;
+	cursor: default;
+}
+
+.central-principal {
+	display: flex;
+}
+
+.central-cadastro,
+.central-estoque {
+	width: 100%;
+	overflow: hidden;
+	filter: grayscale(1) blur(1px);
+	transition: all 0.3s ease-in-out;
+}
+
+.central-cadastro:hover,
+.central-estoque:hover {
+	transform: scale(1.02);
+	filter: grayscale(0) blur(0);
+	box-shadow: 0 0 10px rgba(28, 40, 51, 0.2);
+}
+
+.total-cadastro,
+.total-estoque {
+	width: 50%;
+	position: relative;
+}
+
+.total-cadastro:hover {
+	z-index: 1;
+}
+
+.img-cadastro,
+.img-estoque {
+	width: 100%;
+	overflow-y: hidden;
+}
+
+.texto-cadastro,
+.texto-estoque {
+	position: absolute;
+	left: 300px;
+	bottom: 250px;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bold;
+
+	color: rgba(52, 152, 219, 1);
+	border: 1px solid rgba(52, 152, 219, 1);
+	border-radius: 5px;
+	padding: 10px 25px;
+
+	transition: all 0.3s ease-in-out;
+}
+
+.texto-estoque {
+	color: rgba(28, 40, 51, 0.8);
+	border: 1px solid rgba(28, 40, 51, 0.8);
+}
+
+.total-cadastro:hover .texto-cadastro,
+.total-estoque:hover .texto-estoque {
+	color: white;
+	background: rgba(52, 152, 219, 1);
+	border: 1px solid rgba(52, 152, 219, 1);
+	box-shadow: 0 0 10px rgba(28, 40, 51, 0.2);
+}
+
+
